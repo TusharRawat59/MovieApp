@@ -10,7 +10,7 @@ import AdminDashboard from "./pages/AdminDashboard"
 import AddMovie from "./pages/AddMovie"
 import EditMovie from "./pages/EditMovie"
 
-import { userDataContext } from "./context/userContext"
+import { userDataContext } from "./context/UserContext"
 
 function App() {
   const { userData } = useContext(userDataContext)
