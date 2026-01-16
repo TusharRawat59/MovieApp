@@ -2,7 +2,7 @@ import { useEffect, useState, useContext } from "react"
 import axios from "axios"
 import MovieCard from "../components/MovieCard"
 import { useNavigate } from "react-router-dom"
-import { userDataContext } from "../context/userContext"
+import { userDataContext } from "../context/UserContext"
 
 const Home = () => {
   const [tmdbMovies, setTmdbMovies] = useState([])
