@@ -19,7 +19,7 @@ const port = process.env.PORT || 5000
 // 🔹 CORS
 app.use(
   cors({
-    origin: "https://movieapp-frontend-4bhz.onrender.com",
+    origin: "https://movieapp-ui.onrender.com",
     credentials: true
   })
 )
