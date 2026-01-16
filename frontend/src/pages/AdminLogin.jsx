@@ -17,7 +17,7 @@ const AdminLogin = () => {
 
     try {
       const res = await axios.post(
-        "https://movieapp-oaip.onrender.com/api/admin/login",
+        "https://movieapp-backend-4at2.onrender.com/api/admin/login",
         { email, password },
         { withCredentials: true }
       )
