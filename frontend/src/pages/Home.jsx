@@ -37,7 +37,7 @@ const Home = () => {
 
   // 🎬 Fetch TMDB movies
   const fetchTmdbMovies = async () => {
-    const res = await axios.get("https://movieapp-backend-4at2.onrender.com.com/api/movies", {
+    const res = await axios.get("https://movieapp-backend-4at2.onrender.com/api/movies", {
       params: {
         page,
         search,
