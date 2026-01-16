@@ -23,7 +23,7 @@ const Home = () => {
   const handleLogout = async () => {
     try {
       await axios.get(
-        "http://localhost:8000/api/auth/logout",
+        "https://movieapp-oaip.onrender.com/api/auth/logout",
         {},
         { withCredentials: true }
       )
@@ -37,7 +37,7 @@ const Home = () => {
 
   // 🎬 Fetch TMDB movies
   const fetchTmdbMovies = async () => {
-    const res = await axios.get("http://localhost:8000/api/movies", {
+    const res = await axios.get("https://movieapp-oaip.onrender.com/api/movies", {
       params: {
         page,
         search,
@@ -52,7 +52,7 @@ const Home = () => {
   // 🧑‍💼 Fetch Admin movies (PUBLIC)
   const fetchAdminMovies = async () => {
     const res = await axios.get(
-      "http://localhost:8000/api/movies/admin-public"
+      "https://movieapp-oaip.onrender.com/api/movies/admin-public"
     )
     setAdminMovies(res.data)
   }
