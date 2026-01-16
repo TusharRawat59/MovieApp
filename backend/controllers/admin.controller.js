@@ -30,7 +30,7 @@ export const adminLogin = async (req, res) => {
 
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false, // true in production
+      secure: false, 
     })
 
     res.status(200).json({
