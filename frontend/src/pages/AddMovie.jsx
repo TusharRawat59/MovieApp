@@ -23,7 +23,7 @@ const AddMovie = () => {
 
     try {
       await axios.post(
-        "http://localhost:8000/api/admin/movies",
+        "https://movieapp-oaip.onrender.com/api/admin/movies",
         movie,
         { withCredentials: true }
       )
