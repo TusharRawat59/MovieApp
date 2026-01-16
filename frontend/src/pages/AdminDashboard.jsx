@@ -10,7 +10,7 @@ const AdminDashboard = () => {
   const fetchMovies = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:8000/api/admin/movies",
+        "https://movieapp-oaip.onrender.com/api/admin/movies",
         { withCredentials: true }
       )
       setMovies(res.data)
@@ -26,7 +26,7 @@ const AdminDashboard = () => {
 
     try {
       await axios.delete(
-        `http://localhost:8000/api/admin/movies/${id}`,
+        `https://movieapp-oaip.onrender.com/api/admin/movies/${id}`,
         { withCredentials: true }
       )
       fetchMovies()
@@ -39,7 +39,7 @@ const AdminDashboard = () => {
   const handleLogout = async () => {
     try {
       await axios.post(
-        "http://localhost:8000/api/admin/logout",
+        "https://movieapp-oaip.onrender.com/api/admin/logout",
         {},
         { withCredentials: true }
       )
