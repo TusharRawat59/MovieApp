@@ -11,7 +11,7 @@ const EditMovie = () => {
   useEffect(() => {
     const fetchMovie = async () => {
       const res = await axios.get(
-        "https://movieapp-backend-4at2.onrender.com/api/admin/movies",
+        "https://movieapp-pj8n.onrender.com/api/admin/movies",
         { withCredentials: true }
       )
       const found = res.data.find(m => m._id === id)
@@ -27,7 +27,7 @@ const EditMovie = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     await axios.put(
-      `https://movieapp-backend-4at2.onrender.com/api/admin/movies/${id}`,
+      `https://movieapp-pj8n.onrender.com/api/admin/movies/${id}`,
       movie,
       { withCredentials: true }
     )
