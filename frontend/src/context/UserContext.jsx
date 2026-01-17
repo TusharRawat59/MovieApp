@@ -3,7 +3,7 @@ export const userDataContext = createContext()
 import axios from "axios"
 
 function UserContext({ children }) {
-    const serverUrl = "https://movieapp-backend-4at2.onrender.com"
+    const serverUrl = "https://movieapp-pj8n.onrender.com"
     const [userData, setuserData] = useState(null)
 
 
