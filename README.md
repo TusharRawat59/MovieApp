@@ -2,6 +2,9 @@
 
 This is a MERN stack movie application where users can browse movies and admins can manage movie content. Movies are fetched using the **TMDB API (used because IMDb API cannot be fetched)**, and admin-added movies are stored in MongoDB.
 
+## live URL 
+-https://movieappui.onrender.com/
+
 ## Features
 - User login and logout
 - View, search, filter, and sort movies
