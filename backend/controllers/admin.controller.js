@@ -31,7 +31,7 @@ export const adminLogin = async (req, res) => {
     res.cookie("token", token, {
       httpOnly: true,
       sameSite:"none",
-      secure: ture
+      secure: true
     })
 
     res.status(200).json({
